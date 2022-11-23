@@ -14,6 +14,20 @@
   width: 100%;
 }
 
+#logo {
+  color: #ffca3a;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+}
+
 #menu {
   display: flex;
   list-style: none;
@@ -35,6 +49,11 @@
   padding: 4px;
 }
 
+.pesquisa {
+  display: flex;
+  align-items: center;
+}
+
 #txtpesquisa {
   background-color: #E0EEEE;
   border: 2px solid #17951e;
@@ -52,6 +71,7 @@
   background-color: #17951e;
   color: #FFFFFF;
   font-size: 18px;
+  margin-right: 18px;
 }
 
 #whatsapp {
@@ -59,6 +79,7 @@
   color: #17951e;
   border: none;
   font-size: 40px;
+  margin-right: 18px;
 }
 #whatsapp:hover {
   transform: scale(1.1);
@@ -68,14 +89,32 @@
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1198px) {
+  #logo {
+    font-size: 20px;
+  }
+  #menu a {
+    font-size: 13px;
+  }
+  .pesquisa {
+    margin-right: -45px;
+  }
+  #txtpesquisa {
+    width: 130px;
+  }
+  #btnpesquisa {
+    width: 30px;
+  }
+}
+
+@media (max-width: 984px) {
   #menu {
     display: block;
     position: absolute;
-    width: 100%;
+    width: 50%;
     top: 70px;
     right: 0px;
-    background-color: #17951e;
+    background-color: #ffca3a;
     height: 0px;
     transition: .6s;
     z-index: 1000;
@@ -93,6 +132,8 @@
     margin: 0 1rem;
     border-bottom: 2px solid #FFFFFF;
     text-align: center;
+    font-weight: bold;
+    font-size: 18px;
   }
   #btn-mobile {
     display: flex;
@@ -105,7 +146,7 @@
   }
   #hamburger {
     display: block;
-    border-top: 2px solid #17951e;
+    border-top: 2px solid #ffca3a;
     width: 20px;
   }
   #hamburger::after, #hamburger::before {
@@ -113,7 +154,7 @@
     display: block;
     width: 20px;
     height: 2px;
-    background-color: #17951e;
+    background-color: #ffca3a;
     margin-top: 5px;
     transition: .3s;
     position: relative;
@@ -128,11 +169,27 @@
     transform: rotate(-135deg);
     top: -7px;
   }
+  #txtpesquisa {
+    width: 200px;
+  }
+  #btnpesquisa {
+    width: 50px;
+  }
+  #whatsapp {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 528px) {
   .pesquisa {
     display: none;
   }
-  #whatsapp {
-    display: none;
+  #logo {
+    width: 200px;
+    padding: 5px;
+  }
+  #menu {
+    width: 100%;
   }
 }
 
