@@ -216,12 +216,13 @@ html {
 }
 
 #mainSlider .carousel-inner, #mainSlider .carousel-item {
-  height: 100vh;
+  height: 80vh;
 }
-@media (max-width: 948px) {
-  #mainSlider .carousel-inner, #mainSlider .carousel-item {
-    height: 70vh;
-  }
+
+.carousel-item img {
+  max-height: 100%;
+}
+@media (max-width: 984px) {
   .cards {
     flex-direction: column;
   }
@@ -229,15 +230,8 @@ html {
     margin-top: 40px;
     margin-bottom: 40px;
   }
-}
-@media (max-width: 780px) {
   #mainSlider .carousel-inner, #mainSlider .carousel-item {
-    height: 50vh;
-  }
-}
-@media (max-width: 550px) {
-  #mainSlider .carousel-inner, #mainSlider .carousel-item {
-    height: 35vh;
+    height: 30vh;
   }
 }
 
