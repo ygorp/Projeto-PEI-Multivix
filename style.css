@@ -214,6 +214,21 @@
 #mainSlider .carousel-inner, #mainSlider .carousel-item {
   height: 100vh;
 }
+@media (max-width: 948px) {
+  #mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 70vh;
+  }
+}
+@media (max-width: 780px) {
+  #mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 50vh;
+  }
+}
+@media (max-width: 550px) {
+  #mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 35vh;
+  }
+}
 
 .carousel-indicators .active {
   background-color: #ffca3a;
